@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+    <body>
+        <div id="scroll" class="icon" onclick="clk()"><img src="download.png" alt="" width="50px" height="30px" border="2">
+        </div>
+    
+        <div class="d-none" id="hide">
+            <h1 class="h1">make your card</h1>
+            <br>
+            <input type="text" class="card-maker-input" placeholder="ENTER NAME" id="userName">
+            <div class="error" id="nameError">please fill name input</div>
+            <br>
+            <input type="text" class="card-maker-input" placeholder="ENTER PROFESSION" id="userProfession">
+            <div class="error" id="professionError">please fill profession input</div>
+            <br>
+            <input type="text" class="card-maker-input" placeholder="ENTER PROFILE URL" id="userProfile">
+            <div class="error" id="profileError">please fill profile input</div>
+            <br>
+    
+            <button class="card-maker-input-btn" onclick="cardMaker()">add</button>
+        </div>
+    
+        <div class="container" id="container">
+    
+        </div>
+    
+        <script src="index.js"></script>
+    </body>
+    
+    </html>

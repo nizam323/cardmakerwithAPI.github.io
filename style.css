@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+.parent-card {
+    overflow: hidden;
+    margin: 5px 0;
+    text-transform: uppercase;
+    border-radius: 10px;
+    width: 30%;
+    height: 336px;
+    background-color: burlywood;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+    height: 200px;
+    background-image: url(free-photo-of-a-narrow-alley-with-buildings-and-a-street-sign.jpeg);
+    background-size: 100% 100%;
+}
+
+.card-btn {
+    width: 80%;
+    height: 27px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 5px;
+    text-transform: uppercase;
+    background-color: rgb(24, 24, 220);
+    color: whitesmoke;
+    cursor: pointer;
+    transition-property: transform;
+    transition-duration: 0.7s;
+    transition-timing-function: ease-in;
+}
+
+.card-btn:hover {
+    transform: scaleY(1.2);
+    background-color: rgb(19, 19, 196);
+    border: 1px solid white;
+}
+
+.name {
+    margin: 6px 0;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card-maker {
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+    color: rgb(228, 153, 56);
+}
+
+.icon {
+    margin: 5px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.d-none {
+    display: none;
+}
+
+.card-maker-input {
+    width: 50%;
+    padding: 3px 5px;
+    border-radius: 5px;
+    border: ridge;
+}
+
+.card-maker-input-btn {
+    width: 50%;
+    height: 27px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 5px;
+    text-transform: uppercase;
+    background-color: rgb(24, 24, 220);
+    color: whitesmoke;
+    cursor: pointer;
+    transition-property: transform;
+    transition-duration: 0.7s;
+    transition-timing-function: ease-in;
+
+}
+
+.card-maker-input-btn:hover {
+    transform: scaleY(1.2);
+    background-color: rgb(19, 19, 196);
+    border: 1px solid white;
+}
+
+.h1{
+    text-align: center;
+}
+
+@media only screen and (max-width:480px) {
+    .parent-card{
+        width: 96%;
+    }
+}
+@media only screen and (min-width:481px) {
+    .parent-card{
+        width: 47%;
+    }
+}
+@media only screen and (min-width:750px) {
+    .parent-card{
+        width: 32%;
+    }
+}
+@media only screen and (min-width:1440px) {
+    .parent-card{
+        width: 23%;
+    }
+}
+@media only screen and (min-width:2560px) {
+    .parent-card{
+        width: 17%;
+    }
+}
+
+.error{
+    width: 50%;
+    padding: 3px 5px;
+    border-radius: 5px;
+    border: 2px solid red;
+    margin-bottom: 13px;
+    text-align: center;
+    background-color: rgb(241, 88, 118);
+    color: white;
+    display: none;
+}
